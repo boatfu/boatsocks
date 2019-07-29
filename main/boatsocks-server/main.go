@@ -15,9 +15,9 @@ type Config struct {
 
 func main() {
 	//读取config文件
-	bs, err := ioutil.ReadFile("/etc/gopath/src/boatsocks/config/serverConfig.json")
+	// bs, err := ioutil.ReadFile("/etc/gopath/src/boatsocks/config/serverConfig.json")
 	//在windows中
-	// bs, err := ioutil.ReadFile("C:\\Users\\boate\\go\\src\\boatsocks\\config\\serverConfig.json")
+	bs, err := ioutil.ReadFile("C:\\Users\\boate\\go\\src\\boatsocks\\config\\serverConfig.json")
 	if err != nil {
 		fmt.Println(err)
 		return
